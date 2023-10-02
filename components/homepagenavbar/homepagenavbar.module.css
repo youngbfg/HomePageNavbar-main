@@ -1,0 +1,325 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  margin-top: -40px;
+  width: auto;
+}
+
+/* -------------------------------------- */
+/* homepagenavbar */
+.homepagenavbar {
+  width: 570px;
+  height: 500px;
+  cursor: default;
+}
+
+/* -------------------------------------- */
+/* homepagenavbarstyle */
+
+.homepagenavbarstyle {
+  color: white;
+  background-color: #003c84;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  height: 15%;
+  cursor: default;
+  width: auto;
+}
+
+/* -------------------------------------- */
+/* acil_ulasim_resim */
+
+.acil_ulasim_resim {
+  position: absolute;
+  width: 30%;
+  max-width: 140px;
+  height: auto;
+  margin-left: 290px;
+  cursor: default;
+  margin-top: -42px;
+}
+
+/* -------------------------------------- */
+/* ana_arter_resim */
+
+.ana_arter_resim {
+  margin-top: -65px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-left: 90px;
+  cursor: default;
+  position: absolute;
+}
+
+/* -------------------------------------- */
+/* kararlar_resim*/
+
+.kararlar_resim {
+  margin-top: -50px;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-right: 420px;
+  cursor: default;
+  position: absolute;
+}
+
+/* -------------------------------------- */
+/* acil_ulasim_yollari_yazi  */
+
+.acil_ulasim_yollari_yazi {
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 15px;
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 25px;
+}
+
+/* -------------------------------------- */
+/* anaarter_yollari_yazi */
+
+.anaarter_yollari_yazi {
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 15px;
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 25px;
+
+  cursor: pointer;
+}
+/* -------------------------------------- */
+/* kararlar_yazi */
+
+.kararlar_yazi {
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 25px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+/* -------------------------------------- */
+/* telefon_uyumluluk */
+
+
+@media screen and (min-width: 2853px) and (max-width: 4000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    margin-top: -40px;
+  }
+
+  .homepagenavbar {
+    height: 500px;
+    cursor: default;
+    margin: auto;
+    align-items: center;
+  }
+
+  .acil_ulasim_yollari_yazi {
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 15px;
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 2524px) and (max-width: 2852px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    margin-top: -40px;
+  }
+
+  .homepagenavbar {
+    height: 500px;
+    cursor: default;
+    margin: auto;
+    align-items: center;
+  }
+
+  .acil_ulasim_yollari_yazi {
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 15px;
+    position: absolute;
+    margin-left: 370px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 2116px) and (max-width: 2523px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    margin-top: -40px;
+  }
+
+  .homepagenavbar {
+    height: 500px;
+    cursor: default;
+    margin: auto;
+    align-items: center;
+  }
+
+  .acil_ulasim_yollari_yazi {
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 15px;
+    position: absolute;
+    margin-left: 390px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 1741px) and (max-width: 2115px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    margin-top: -40px;
+  }
+
+  .homepagenavbar {
+    height: 500px;
+    cursor: default;
+    margin: auto;
+    align-items: center;
+  }
+
+  .acil_ulasim_yollari_yazi {
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 15px;
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 1431px) and (max-width: 1740px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    margin-top: -40px;
+  }
+
+  .homepagenavbar {
+    height: 500px;
+    cursor: default;
+    margin: auto;
+    align-items: center;
+  }
+
+  .acil_ulasim_yollari_yazi {
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 15px;
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 1257px) and (max-width: 1430px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    margin-top: -40px;
+    font-size: 13px;
+  }
+
+  .homepagenavbar {
+    height: 500px;
+    cursor: default;
+    margin: auto;
+    align-items: center;
+  }
+
+  .acil_ulasim_yollari_yazi {
+    color: white;
+
+    text-transform: capitalize;
+    font-size: 13px;
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1256px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    margin-top: -40px;
+    font-size: 13px;
+  }
+
+  .homepagenavbar {
+    height: 500px;
+    cursor: default;
+    margin: auto;
+    align-items: center;
+  }
+
+  .acil_ulasim_yollari_yazi {
+    color: white;
+
+    text-transform: capitalize;
+    font-size: 15px;
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 1023px) {
+  .container {
+    visibility: hidden;
+    position: absolute;
+    max-width: 100%;
+  }
+
+  .homepagenavbar {
+    width: auto;
+    margin: auto;
+    align-items: center;
+    visibility: hidden;
+  }
+}
