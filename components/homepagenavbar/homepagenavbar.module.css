@@ -28,7 +28,7 @@
   -o-border-radius: 100px;
   height: 15%;
   cursor: default;
-  width: auto;
+  
 }
 
 /* -------------------------------------- */
@@ -36,7 +36,6 @@
 
 .acil_ulasim_resim {
   position: absolute;
-  width: 30%;
   max-width: 140px;
   height: auto;
   margin-left: 290px;
@@ -49,7 +48,6 @@
 
 .ana_arter_resim {
   margin-top: -65px;
-  width: 100%;
   max-width: 200px;
   height: auto;
   margin-left: 90px;
@@ -62,7 +60,7 @@
 
 .kararlar_resim {
   margin-top: -50px;
-  width: 100%;
+
   max-width: 150px;
   height: auto;
   margin-right: 420px;
@@ -79,7 +77,7 @@
   text-transform: capitalize;
   font-size: 15px;
   position: absolute;
-  margin-left: 20%;
+  margin-left: 390px;
   margin-top: 25px;
 }
 
@@ -94,7 +92,6 @@
   position: absolute;
   margin-left: 220px;
   margin-top: 25px;
-
   cursor: pointer;
 }
 /* -------------------------------------- */
@@ -107,10 +104,9 @@
   font-size: 15px;
   position: absolute;
   margin-top: 25px;
-  width: 100%;
   max-width: 200px;
   height: auto;
-  margin-left: 30px;
+  margin-left: 100px;
   cursor: pointer;
 }
 
@@ -140,7 +136,7 @@
     text-transform: capitalize;
     font-size: 15px;
     position: absolute;
-    margin-left: 380px;
+    margin-left: 390px;
     margin-top: 25px;
   }
 }
@@ -167,7 +163,7 @@
     text-transform: capitalize;
     font-size: 15px;
     position: absolute;
-    margin-left: 370px;
+    margin-left: 390px;
     margin-top: 25px;
   }
 }
@@ -188,15 +184,6 @@
     align-items: center;
   }
 
-  .acil_ulasim_yollari_yazi {
-    color: white;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 15px;
-    position: absolute;
-    margin-left: 390px;
-    margin-top: 25px;
-  }
 }
 
 @media screen and (min-width: 1741px) and (max-width: 2115px) {
@@ -215,15 +202,7 @@
     align-items: center;
   }
 
-  .acil_ulasim_yollari_yazi {
-    color: white;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 15px;
-    position: absolute;
-    margin-left: 380px;
-    margin-top: 25px;
-  }
+ 
 }
 
 @media screen and (min-width: 1431px) and (max-width: 1740px) {
@@ -242,15 +221,7 @@
     align-items: center;
   }
 
-  .acil_ulasim_yollari_yazi {
-    color: white;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 15px;
-    position: absolute;
-    margin-left: 380px;
-    margin-top: 25px;
-  }
+
 }
 
 @media only screen and (min-width: 1257px) and (max-width: 1430px) {
@@ -260,7 +231,7 @@
     align-items: center;
     cursor: default;
     margin-top: -40px;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .homepagenavbar {
@@ -270,15 +241,6 @@
     align-items: center;
   }
 
-  .acil_ulasim_yollari_yazi {
-    color: white;
-
-    text-transform: capitalize;
-    font-size: 13px;
-    position: absolute;
-    margin-left: 380px;
-    margin-top: 25px;
-  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1256px) {
@@ -288,7 +250,7 @@
     align-items: center;
     cursor: default;
     margin-top: -40px;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .homepagenavbar {
@@ -298,15 +260,6 @@
     align-items: center;
   }
 
-  .acil_ulasim_yollari_yazi {
-    color: white;
-
-    text-transform: capitalize;
-    font-size: 15px;
-    position: absolute;
-    margin-left: 380px;
-    margin-top: 25px;
-  }
 }
 
 @media only screen and (min-width: 1px) and (max-width: 1023px) {
@@ -317,7 +270,6 @@
   }
 
   .homepagenavbar {
-    width: auto;
     margin: auto;
     align-items: center;
     visibility: hidden;
