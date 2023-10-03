@@ -11,6 +11,7 @@ const Counter = () => {
             <div className={styles.end}>
               <i className={styles.fa_2x}></i>
               <h2
+              
                 className={styles.count_title}
                 data-to="300"
                 data-speed="1500"
