@@ -7,7 +7,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    
+    margin-top: -420px;
 }
 
   .wrapper { 
@@ -15,8 +15,8 @@
     margin: 10px auto; 
     position: relative;
     background-color: none;
-  box-shadow: 15px 15px 15px gray;
-  border-radius: 10px;
+    box-shadow: 15px 15px 15px gray;
+    border-radius: 10px;
 }
 
   .counter { 

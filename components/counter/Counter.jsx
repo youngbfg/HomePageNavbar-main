@@ -29,7 +29,7 @@ const Counter = () => {
                 duration={3.35}
                 separator=","
                 start={0.0}
-                end={34000.0}
+                end={44000.0}
                 prefix="%"
               />
             </div>
@@ -48,7 +48,7 @@ const Counter = () => {
 
           {/* -----------başlık yazısı---------------- */}
           <div className={styles.count_title}>
-            <p>Test0</p>
+            <p>Test1</p>
 
             {/* ----------------rakam------------------------- */}
             <div className={styles.number}>
@@ -56,7 +56,7 @@ const Counter = () => {
                 duration={3.35}
                 separator=","
                 start={0.0}
-                end={34000.0}
+                end={44000.0}
                 prefix="%"
               />
             </div>
@@ -75,7 +75,7 @@ const Counter = () => {
 
           {/* -----------başlık yazısı---------------- */}
           <div className={styles.count_title}>
-            <p>Test0</p>
+            <p>Test2</p>
 
             {/* ----------------rakam------------------------- */}
             <div className={styles.number}>
@@ -83,7 +83,7 @@ const Counter = () => {
                 duration={3.35}
                 separator=","
                 start={0.0}
-                end={34000.0}
+                end={24000.0}
                 prefix="%"
               />
             </div>
@@ -102,7 +102,7 @@ const Counter = () => {
 
           {/* -----------başlık yazısı---------------- */}
           <div className={styles.count_title}>
-            <p>Test0</p>
+            <p>Test3</p>
 
             {/* ----------------rakam------------------------- */}
             <div className={styles.number}>
@@ -110,8 +110,8 @@ const Counter = () => {
                 duration={3.35}
                 separator=","
                 start={0.0}
-                end={34000.0}
-                prefix="%"
+                end={14000.0}
+                suffix="%"
               />
             </div>
           </div>
