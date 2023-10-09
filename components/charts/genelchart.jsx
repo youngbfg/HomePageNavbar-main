@@ -183,61 +183,7 @@ const DemoMix = () => {
           },
         ],
       },
-      {
-        data: new DataView()
-          .source(
-            yearData.map((d) => ({
-              year: d[0],
-              male: d[3],
-              female: d[4],
-            })),
-          )
-          .transform({
-            type: 'fold',
-            fields: ['male', 'female'],
-            key: 'gender',
-            value: 'turnout',
-          }).rows,
-        region: {
-          start: {
-            x: 0.52,
-            y: 0.52,
-          },
-          end: {
-            x: 1,
-            y: 1,
-          },
-        },
-        axes: {
-          year: {
-            title: {
-              text: 'Turnout by gender',
-            },
-          },
-        },
-        geometries: [
-          {
-            type: 'interval',
-            xField: 'year',
-            yField: 'turnout',
-            colorField: 'gender',
-            
-            adjust: {
-              type: 'dodge',
-              marginRatio: 0,
-            },
-            mapping: {},
-          },
-        ],
-        interactions: [
-          {
-            type: 'element-active',
-          },
-          {
-            type: 'association-sibling-highlight',
-          },
-        ],
-      },
+     
     ],
   };
   return <Mix {...config} />;
