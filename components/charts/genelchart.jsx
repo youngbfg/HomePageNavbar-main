@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
-const Mix = dynamic(() => import('@ant-design/plots').then(({ Mix }) => Mix),
-    { ssr: false }
+const Mix = dynamic(() => import('@ant-design/plots').then(({ Mix }) => Mix),{ ssr: false }
 );
 import dynamic from 'next/dynamic';
 
@@ -9,30 +7,27 @@ import { DataView } from '@antv/data-set';
 
 const DemoMix = () => {
   const data = [
-    ['Cosmopolitan', 51, 45, 6],
-    ['Martini', 67, 39, 28],
-    ['Mojito', 19, 11, 8],
-    ['Margarita', 47, 33, 14],
-    ['Mai Tai', 32, 20, 12],
-    ['Beer', 70, 20, 50],
-  ];
-  const yearData = [
-    ['2010', 60, 176, 35, 25],
-    ['2011', 51, 136, 25, 26],
-    ['2012', 73, 196, 35, 38],
-    ['2013', 84, 315, 43, 41],
-    ['2014', 79, 203, 36, 33],
-    ['2015', 89, 286, 41, 48],
+    ['UTK', 51],
+    ['UKOME', 67],
+    ['İTK', 19],
   ];
   
+  const yearData = [
+    ['2010', 60],
+    ['2011', 51],
+    ['2012', 73],
+    ['2013', 84],
+    ['2014', 79],
+    ['2015', 89],
+  ];
+  
+  // çember konfigrasyonu
   const config = {
     height: 500,
     padding: 'auto',
     tooltip: {
-      showMarkers: false,
-      color: ['#1ca9e6', '#f88c24'],
+    showMarkers: false,
     },
-   
     views: [
       {
         data: data.map((d) => ({
@@ -52,13 +47,13 @@ const DemoMix = () => {
         coordinate: {
           type: 'theta',
           cfg: {
-            radius: 0.85,
+            radius: 0.99,
           },
         },
         axes: {
           value: {
             title: {
-              text: 'Drinks',
+              text: '',
             },
             grid: null,
             tickLine: null,
@@ -88,14 +83,13 @@ const DemoMix = () => {
         ],
       },
 
-      // -------------------------------------------
+      // bar grafik-------------------------------------------
       {
         data: new DataView()
           .source(
             data.map((d) => ({
               type: d[0],
-              ordered: d[2],
-             
+              ordered: d[1],
             })),
           )
           .transform({
@@ -120,14 +114,15 @@ const DemoMix = () => {
           },
         },
         axes: {
-          value: false,
+          // value: true,
+          value: true,
         },
         geometries: [
           {
             type: 'interval',
             xField: 'type',
             yField: 'value',
-            colorField: '#f88c24',
+            colorField: '#003c84',
             mapping: {},
             adjust: {
               type: 'dodge',
@@ -136,6 +131,8 @@ const DemoMix = () => {
           },
         ],
       },
+
+      //sütun grafik -------------------------------------------------------------
       {
         data: yearData.map((d) => ({
           year: d[0],
@@ -147,16 +144,11 @@ const DemoMix = () => {
             y: 0.52,
           },
           end: {
-            x: 0.48,
+            x: 0.98,
             y: 1,
           },
         },
         axes: {
-          year: {
-            title: {
-              text: 'Drinks ordered',
-            },
-          },
         },
         meta: {
           ordered: {
@@ -170,6 +162,7 @@ const DemoMix = () => {
             xField: 'year',
             yField: 'ordered',
             mapping: {},
+            colorField: '#003c84',
           },
           {
             type: 'line',
@@ -177,13 +170,12 @@ const DemoMix = () => {
             yField: 'ordered',
             mapping: {
               style: {
-                lineWidth: 0.5,
+                lineWidth: 5.0,
               },
             },
           },
         ],
       },
-     
     ],
   };
   return <Mix {...config} />;
