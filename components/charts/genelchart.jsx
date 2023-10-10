@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 const Mix = dynamic(() => import('@ant-design/plots').then(({ Mix }) => Mix),{ ssr: false }
 );
 import dynamic from 'next/dynamic';
-
+import styles from "./genelchart.module.css";
 import { DataView } from '@antv/data-set';
 
 const DemoMix = () => {
@@ -134,10 +134,23 @@ const DemoMix = () => {
 
       //sütun grafik -------------------------------------------------------------
       {
-        data: yearData.map((d) => ({
-          year: d[0],
-          ordered: d[1],
-        })),
+
+
+        data: new DataView()
+        .source(
+          yearData.map((d) => ({
+            year: d[0],
+            ordered: d[1],
+          })),
+        )
+        .transform({
+          type: 'fold',
+          fields: ['ordered'],
+          key: 'gender',
+          value: 'value',
+        }).rows,
+
+      
         region: {
           start: {
             x: 0,
@@ -149,6 +162,7 @@ const DemoMix = () => {
           },
         },
         axes: {
+          value: true,
         },
         meta: {
           ordered: {
@@ -160,25 +174,37 @@ const DemoMix = () => {
           {
             type: 'interval',
             xField: 'year',
-            yField: 'ordered',
+            yField: 'value',
             mapping: {},
             colorField: '#003c84',
-          },
-          {
-            type: 'line',
-            xField: 'year',
-            yField: 'ordered',
-            mapping: {
-              style: {
-                lineWidth: 5.0,
-              },
+            adjust: {
+              type: 'dodge',
+              marginRatio: 0,
             },
           },
+
+          // üst çizgi isteğe bağlı açılıp kapatılabilir------------------
+          // // {
+          //   type: 'line',
+          //   xField: 'year',
+          //   yField: 'ordered',
+          //   colorField: '',
+          //   mapping: {
+          //     style: {
+          //       lineWidth: 5.0,
+                
+          //     },
+          //   },
+          // },
         ],
       },
     ],
   };
-  return <Mix {...config} />;
+  return(
+    <div className={styles.general}>
+        <Mix {...config} />
+    </div>
+  )
 };
 
 export default DemoMix;

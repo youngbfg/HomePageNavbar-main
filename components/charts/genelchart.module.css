@@ -1,0 +1,7 @@
+@media only screen and (min-width: 1px) and (max-width: 1023px) {
+    .general {
+    visibility: hidden;
+    position: absolute;
+    max-width: 100%;
+    }
+}
